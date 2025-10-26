@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use('/api', countryRoutes);
+app.use('/', countryRoutes);
 
 // Root route
 app.get('/', (req, res) => {
